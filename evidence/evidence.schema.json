@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schemaVersion", "labId", "execution", "assertions", "generatedAt"],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "labId": { "type": "string", "const": "signature-validation-01" },
+    "execution": {
+      "type": "object",
+      "required": ["command", "exitCode", "passed", "failed"],
+      "properties": {
+        "command": { "type": "string" },
+        "exitCode": { "type": "integer" },
+        "passed": { "type": "integer" },
+        "failed": { "type": "integer" }
+      },
+      "additionalProperties": true
+    },
+    "assertions": {
+      "type": "object",
+      "required": ["exploitConfirmed", "fixConfirmed", "negativeControlConfirmed"],
+      "properties": {
+        "exploitConfirmed": { "type": "boolean" },
+        "fixConfirmed": { "type": "boolean" },
+        "negativeControlConfirmed": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "generatedAt": { "type": "string" }
+  },
+  "additionalProperties": true
+}

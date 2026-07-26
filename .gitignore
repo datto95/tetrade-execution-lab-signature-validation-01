@@ -1,0 +1,11 @@
+out/
+cache/
+broadcast/
+coverage/
+lib/
+*.log
+.env
+.venv/
+evidence/evidence.json
+evidence/gas-report.txt
+evidence/last-forge-test-output.log
