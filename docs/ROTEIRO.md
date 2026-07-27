@@ -10,6 +10,9 @@ Entregas:
 - README com comandos reproduciveis.
 - Evidencia estruturada em JSON.
 
+Status:
+- Concluida.
+
 ## Fase 2 - Fortalecimento
 
 Objetivo:
@@ -20,6 +23,9 @@ Entregas:
 - Fuzz para variacoes de nonce e valor de saque.
 - Relatorio de gas para comparar fluxo vulneravel e corrigido.
 
+Status atual:
+- Concluida.
+
 ## Fase 3 - Pacote didatico
 
 Objetivo:
@@ -29,6 +35,9 @@ Entregas:
 - Guia passo a passo para aluno.
 - Guia para instrutor.
 - Checklist de auditoria rapida para fluxos baseados em assinatura.
+
+Status atual:
+- Concluida.
 
 ## Proximo laboratorio
 
