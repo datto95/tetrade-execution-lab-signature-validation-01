@@ -34,3 +34,12 @@ jobs:
 
       - name: Validate evidence
         run: python3 scripts/generate_evidence.py --validate-only evidence/evidence.json
+
+      - name: Generate gas report
+        run: make gas-report
+
+      - name: Upload gas report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gas-report
+          path: evidence/gas-report.txt
